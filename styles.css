@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+    background-color: #474F5B;
+}
+
+h1 {
+    color: white;
+}
+
+#result {
+    visibility: hidden;
+}
+
+#searchApp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    padding: 25px;
+    background-color: white;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 7px 7px rgb(130, 129, 129);
+}
+
+#searchArea input {
+    padding: 5px 0;
+    margin-right: 25px;
+}
+
+#searchArea #search-button {
+    cursor: pointer;
+    background-color: rgb(76, 126, 243);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.5s, transform 0.3s;
+}
+
+#searchArea #search-button:hover {
+    background-color: rgb(23, 88, 239);
+    transform: scale(1.2);
+}
+
+.name {
+    text-align: center;
+    margin: 15px;
+}
+
+.name span {
+    margin: 10px;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.weight {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.weight span {
+    margin: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#stats {
+    display: flex;
+    justify-content: center;
+}
+
+#spriteResult {
+    height: 250px;
+    border: 3px solid gray;
+    background-color: rgb(197, 197, 197);
+    border-radius: 15px;
+    width: 80%;
+    margin: 15px auto;
+}
+
+#spriteResult img {
+    width: 90%;
+    height: 100%;
+}
+
+#types {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    place-content: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.type {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.normal {
+    background-color: rgb(196, 193, 193);
+}
+
+.fire {
+    background-color: rgb(255, 38, 38);
+}
+
+.fighting {
+    background-color: rgb(249, 145, 26);
+}
+
+.water {
+    background-color: rgb(48, 139, 251);
+}
+
+.flying {
+    background-color: rgb(175, 255, 250);
+}
+
+.grass {
+    background-color: rgb(60, 176, 60);
+}
+
+.poison {
+    background-color: rgb(176, 19, 176);
+}
+
+.electric {
+    background-color: yellow;
+}
+
+.ground {
+    background-color: rgb(179, 97, 34);
+}
+
+.psychic {
+    background-color: rgb(255, 66, 170);
+}
+
+.rock {
+    background-color: rgb(224, 153, 99);
+}
+
+.ice {
+    background-color: rgb(150, 252, 252);
+}
+
+.bug {
+    background-color: rgb(120, 172, 42);
+}
+
+.dragon {
+    background-color: rgb(102, 0, 255);
+}
+
+.ghost {
+    background-color: rgb(94, 47, 94);
+}
+
+.dark {
+    background-color: rgb(41, 21, 36);
+}
+
+.steel {
+    background-color: rgb(157, 176, 184);
+}
+
+.fairy {
+    background-color: rgb(245, 170, 196);
+}
+
+th {
+    background-color: rgb(177, 97, 177);
+    width: 185px;
+    border-radius: 5px;
+    font-weight: normal;
+    /*tr n'accepte pas le padding malheureusement :(*/
+}
+
+th:nth-child(2) {
+    width: 100px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.copyright {
+    color: rgba(0, 0, 0, 0.63);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+

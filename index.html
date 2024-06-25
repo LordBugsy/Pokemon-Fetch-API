@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="searchApp">
+
+        <h1>Pokémon Search App</h1>
+
+        <form id="card">
+            <p>Search Pokémon Name or Pokédex Number</p>
+            <div id="searchArea">
+                <input required type="text" id="search-input">
+                <input id="search-button" type="submit" value="Search">
+            </div>
+
+            <div id="result">
+                <div class="name">
+                    <span id="pokemon-name"></span>
+                    <span id="pokemon-id"></span>
+                </div>
+
+                <div class="weight">
+                    <span id="weight"></span>
+                    <span id="height"></span>
+                </div>
+
+                <div id="spriteResult"></div>
+
+                <div id="types">
+                    <!-- <span id="type1" style="visibility: hidden;" class="type">Feu</span>
+                    <span id="type2" style="visibility: hidden;" class="type">Tenebre</span> -->
+                </div>
+            </div>
+
+            <div id="stats">
+                <table>
+                   <tr>
+                    <th class="bold">Base</th>
+                    <th class="bold">Stats</th>
+                   </tr>
+                   
+                   <tr>
+                    <th>HP:</th>
+                    <th id="hp"></th>
+                   </tr>
+
+                   <tr>
+                    <th>Attack:</th>
+                    <th id="attack"></th>
+                   </tr>
+
+                   <tr>
+                    <th>Defense:</th>
+                    <th id="defense"></th>
+                   </tr>
+
+                   <tr>
+                    <th>Sp. Attack:</th>
+                    <th id="special-attack"></th>
+                   </tr>
+
+                   <tr>
+                    <th>Sp. Defense:</th>
+                    <th id="special-defense"></th>
+                   </tr>
+
+                   <tr>
+                    <th>Speed:</th>
+                    <th id="speed"></th>
+                   </tr>
+                   
+                </table>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © 2024 LordBugsy. All Rights Reserved.</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
